@@ -36,7 +36,7 @@ body, button {
     margin: auto;
 }
 
-#main_contain {
+.container {
     & .hero {
         padding-top: 7em;
         &_image {
@@ -132,12 +132,12 @@ body, button {
             }
             &-text {
                 &-contain {
-                    background-color: white;
                     padding: 3em 2em;
                 }
                 &-btn {
                     background-color: $darkpurp;
                     padding: .75em 1.25em;
+                    cursor: pointer;
                     color: white;
                 }
                 &-subhead {
@@ -206,6 +206,87 @@ body, button {
     height: 1px;
 }
 
+.bold {
+    font-weight: 600;
+}
+
+//HEALCO
+#fullwork {
+    & p {
+        line-height: 1.75em;
+    }
+    & li {
+        line-height: 1.75em;
+    }
+    & .hero {
+        padding-top: 3em;
+        background-color: $lightog;
+        &_image {
+            margin: unset;
+            &-img {
+                border: unset;
+                padding: unset;
+            }
+        }
+        width: 100%;
+        &_quote {
+            color: white;
+            text-align: center;
+            font-family: "Lora";
+            padding: 4em 2em;
+            background-color: $healco_green;
+        }
+    }
+    & .work {
+        background-color: unset;
+        padding: unset;
+        padding: 4em 0;
+        &_full {
+            width: 100%;
+            background-color: $lightgreen;
+            padding: 4em 0;
+            &.conclusion {
+                background-color: $darkpurp;
+                color: $lightwhite;
+                padding: 4em 0;
+            }
+        }
+        &_box {
+            margin: auto;
+            &.pure_text {
+                margin-top: 2em;
+            }
+            &-image {
+                &-img {
+                    width: 100%;
+                    margin: 2em auto;
+                    &.last {
+                        margin-bottom: unset;
+                    }
+                }
+            }
+            &-text {
+                &-contain {
+                    padding: unset;
+                }
+                &-header {
+                    margin: 0 0 .75em 0;
+                }
+                &-ordered {
+                    padding: 0 0 0 2em;
+                }
+                &-li {
+                    margin: 2em 0 0 0;
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+
 @media only screen and (min-width: 500px) {
     #main_contain {
         & .hero {
@@ -220,6 +301,19 @@ body, button {
             &_image {
                 width: 325px;
                 margin: 3em auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 605px) {
+    #fullwork {
+        & .hero {
+            &_quote {
+                &-text {
+                    width: 526px;
+                    margin: auto;
+                }
             }
         }
     }
@@ -286,6 +380,13 @@ body, button {
         &_right {
             display: inline-block;
             margin: unset;
+        }
+    }
+    #fullwork {
+        & .work {
+            &_box {
+                width: 752px;
+            }
         }
     }
 }
