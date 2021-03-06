@@ -116,6 +116,83 @@ body, button {
   margin: auto;
 }
 
+.nav {
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  padding: 1.5em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: white;
+}
+
+.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 85%;
+  margin: auto;
+}
+
+.nav_list-li {
+  margin: 0 1em;
+  color: #555B6E;
+  cursor: pointer;
+}
+
+.list_li {
+  margin-right: unset;
+}
+
+.image_hover {
+  background-color: #555B6E;
+  padding: 1em;
+  color: #FAF9F9;
+  position: absolute;
+  bottom: 15%;
+  right: -10%;
+  font-size: .85em;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.image_hover-rel {
+  position: relative;
+}
+
+.image_hover-rel.israel {
+  width: 75%;
+  margin: auto;
+}
+
+.image_hover-rel:hover .image_hover {
+  opacity: 1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.image_hover-rel:hover .hero_image-img {
+  background-image: url("../images/japan-post.jpg");
+  background-size: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.image_hover-rel:hover .about_img-img {
+  background-image: url("../images/profile-post.jpg");
+  background-size: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 .container .hero {
   padding-top: 7em;
 }
@@ -127,8 +204,10 @@ body, button {
 .container .hero_image-img {
   width: 100%;
   padding: .75em 0;
-  border-top: 1px solid #89B0AE;
-  border-bottom: 1px solid #89B0AE;
+  background-image: url("../images/japan-pre.jpg");
+  background-size: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .container .hero_text {
@@ -252,9 +331,13 @@ body, button {
 }
 
 .container .about_img-img {
-  padding: 0 .75em;
-  border-right: 1px solid #89B0AE;
-  border-left: 1px solid #89B0AE;
+  width: 100%;
+  margin: auto;
+  padding: .75em 0;
+  background-image: url("../images/profile-pre.jpg");
+  background-size: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .container .about_text-para {

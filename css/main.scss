@@ -36,6 +36,68 @@ body, button {
     margin: auto;
 }
 
+.nav {
+    transition: top 0.3s;
+    padding: 1.5em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: white;
+    &_list {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        width: 85%;
+        margin: auto;
+        &-li {
+            margin: 0 1em;
+            color: $darkpurp;
+            cursor: pointer;
+        }
+    }
+}
+
+.list_li {
+    margin-right: unset;
+}
+
+.image_hover {
+    background-color: $darkpurp;
+    padding: 1em;
+    color: $lightwhite;
+    position: absolute;
+    bottom: 15%;
+    right: -10%;
+    font-size: .85em;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    &-rel {
+        position: relative;
+        &.israel {
+            width: 75%;
+            margin: auto;
+        }
+        &:hover {
+            & .image_hover {
+                opacity: 1;
+                transition: all .3s ease-in-out;
+            }
+            & .hero_image-img {
+                background-image: url("../images/japan-post.jpg");
+                background-size: cover;
+                transition: all .3s ease-in-out;
+            }
+            & .about_img-img {
+                background-image: url("../images/profile-post.jpg");
+                background-size: cover;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
 .container {
     & .hero {
         padding-top: 7em;
@@ -44,8 +106,13 @@ body, button {
             &-img {
                 width: 100%;
                 padding: .75em 0;
-                border-top: 1px solid $darkgreen;
-                border-bottom: 1px solid $darkgreen;
+                // border-top: 1px solid $darkgreen;
+                // border-bottom: 1px solid $darkgreen;
+                background-image: url("../images/japan-pre.jpg");
+                background-size: cover;
+                transition: all .3s ease-in-out;
+                &:hover {
+                }
             }
         }
         &_text {
@@ -152,9 +219,16 @@ body, button {
         padding-bottom: 3em;
         &_img {
             &-img {
-                padding: 0 .75em;
-                border-right: 1px solid $darkgreen;
-                border-left: 1px solid $darkgreen;
+                width: 100%;
+                margin: auto;
+                padding: .75em 0;
+                // border-top: 1px solid $darkgreen;
+                // border-bottom: 1px solid $darkgreen;
+                background-image: url("../images/profile-pre.jpg");
+                background-size: cover;
+                transition: all .3s ease-in-out;
+                &:hover {
+                }
             }
         }
         &_text {
