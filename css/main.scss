@@ -262,6 +262,9 @@ body, button {
             &.datadove_back {
                 background-color: #11151A;
             }
+            &.rugsusa_back {
+                background-color: $rugs_purp;
+            }
         }
     }
     & .work {
@@ -272,6 +275,14 @@ body, button {
             width: 100%;
             background-color: $lightgreen;
             padding: 4em 0;
+            &.datadove_full {
+                background-color: #1F272F;
+                color: $lightwhite;
+            }
+            &.rugsusa_full {
+                background-color: #656384;
+                color: $lightwhite;
+            }
             &.conclusion {
                 background-color: $darkpurp;
                 color: $lightwhite;
@@ -305,12 +316,21 @@ body, button {
                 &-li {
                     margin: 2em 0 0 0;
                     padding-left: 1em;
+                    &.rugs {
+                        margin: unset;
+                    }
+                    &.first_li {
+                        margin-top: 1em;
+                    }
                 }
             }
         }
     }
 }
 
+.midtext {
+    margin-top: 2em;
+}
 
 //MEDIA QUERIES
 

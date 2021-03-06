@@ -365,6 +365,10 @@ body, button {
   background-color: #11151A;
 }
 
+#fullwork .hero_quote.rugsusa_back {
+  background-color: #333150;
+}
+
 #fullwork .work {
   background-color: unset;
   padding: unset;
@@ -375,6 +379,16 @@ body, button {
   width: 100%;
   background-color: #BEE3DB;
   padding: 4em 0;
+}
+
+#fullwork .work_full.datadove_full {
+  background-color: #1F272F;
+  color: #FAF9F9;
+}
+
+#fullwork .work_full.rugsusa_full {
+  background-color: #656384;
+  color: #FAF9F9;
 }
 
 #fullwork .work_full.conclusion {
@@ -415,6 +429,18 @@ body, button {
 #fullwork .work_box-text-li {
   margin: 2em 0 0 0;
   padding-left: 1em;
+}
+
+#fullwork .work_box-text-li.rugs {
+  margin: unset;
+}
+
+#fullwork .work_box-text-li.first_li {
+  margin-top: 1em;
+}
+
+.midtext {
+  margin-top: 2em;
 }
 
 @media only screen and (min-width: 500px) {
