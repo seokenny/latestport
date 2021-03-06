@@ -320,9 +320,24 @@ body, button {
 }
 
 #fullwork .hero {
-  padding-top: 3em;
+  padding-top: unset;
   background-color: #F6F8F9;
   width: 100%;
+}
+
+#fullwork .hero_head-text {
+  text-align: center;
+  padding-top: 3em;
+}
+
+#fullwork .hero_head-header {
+  font-size: 3em;
+  font-weight: 600;
+  padding-top: 1em;
+}
+
+#fullwork .hero_head-para {
+  margin-top: -10px;
 }
 
 #fullwork .hero_image {

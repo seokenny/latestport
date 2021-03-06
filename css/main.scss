@@ -219,8 +219,22 @@ body, button {
         line-height: 1.75em;
     }
     & .hero {
-        padding-top: 3em;
+        padding-top: unset;
         background-color: $lightog;
+        &_head {
+            &-text {
+                text-align: center;
+                padding-top: 3em;
+            }
+            &-header {
+                font-size: 3em;
+                font-weight: 600;
+                padding-top: 1em;
+            }
+            &-para {
+                margin-top: -10px;
+            }
+        }
         &_image {
             margin: unset;
             &-img {
