@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Volte Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Regular Italic"), url("../fonts/Volte Regular Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Regular"), url("../fonts/Volte.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Light Italic"), url("../fonts/Volte Light Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Light"), url("../fonts/Volte Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Medium Italic"), url("../fonts/Volte Medium Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Medium"), url("../fonts/Volte Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Semibold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Semibold Italic"), url("../fonts/Volte Semibold Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Semibold"), url("../fonts/Volte Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Bold Italic"), url("../fonts/Volte Bold Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Volte Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Volte Bold"), url("../fonts/Volte Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Extrabold";
+  src: url("../fonts/Gilroy-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/Gilroy-Bold.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: unset;
+  padding: unset;
+}
+
+button {
+  border: unset;
+}
+
+body, button {
+  font-family: "Volte";
+}
+
+.hero_text, .work_box-text-header {
+  font-family: "Gilroy";
+}
+
+.left_cta {
+  background-color: #555B6E;
+}
+
+.right_cta {
+  background-color: #89B0AE;
+}
+
+.hero, .three {
+  width: 85%;
+  margin: auto;
+}
+
+#main_contain .hero_text {
+  text-align: center;
+}
+
+#main_contain .hero_text-header {
+  font-size: 2em;
+}
+
+#main_contain .hero_text-subhead {
+  margin: 1em 0;
+  font-size: 1.125em;
+}
+
+#main_contain .hero_text-para {
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+#main_contain .hero_cta-btn {
+  color: white;
+  display: block;
+  width: 125px;
+  padding: 1em 0;
+  margin: .75em auto;
+}
+
+#main_contain .three_box {
+  background-color: white;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border: 1px solid #BEE3DB;
+  margin: 5em auto;
+}
+
+#main_contain .three_box-icon {
+  width: 75px;
+  height: 75px;
+  background-color: #BEE3DB;
+  position: absolute;
+  top: -37.5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#main_contain .three_box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 55%;
+  width: 70%;
+}
+
+#main_contain .work {
+  background-color: #BEE3DB;
+}
+
+#main_contain .work_box {
+  width: 85%;
+  margin: 1em auto;
+}
+
+#main_contain .work_box-img {
+  height: 300px;
+  width: 100%;
+  background-color: #89B0AE;
+}
+
+#main_contain .work_box-text-contain {
+  border: 1px solid #89B0AE;
+  background-color: white;
+  padding: 2em;
+}
+
+#main_contain .work_box-text-btn {
+  background-color: #555B6E;
+  padding: .5em 1em;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

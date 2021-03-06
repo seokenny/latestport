@@ -1,0 +1,112 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: unset;
+    padding: unset;
+}
+
+button {
+    border: unset;
+}
+
+body, button {
+    font-family: "Volte";
+}
+
+.hero_text, .work_box-text-header {
+    font-family: "Gilroy";
+}
+
+.left_cta {
+    background-color: $darkpurp;
+}
+
+.right_cta {
+    background-color: $darkgreen;
+}
+
+.hero, .three {
+    width: 85%;
+    margin: auto;
+}
+
+#main_contain {
+    & .hero {
+        &_image {
+
+        }
+        &_text {
+            text-align: center;
+            &-header {
+                font-size: 2em;
+            }
+            &-subhead {
+                margin: 1em 0;
+                font-size: 1.125em;
+            }
+            &-para {
+                font-size: .9em;
+                line-height: 1.5em;
+            }
+        }
+        &_cta {
+            &-btn {
+                color: white;
+                display: block;
+                width: 125px;
+                padding: 1em 0;
+                margin: .75em auto;
+            }
+        }
+    }
+    & .three {
+        &_box {
+            background-color: white;
+            position: relative;
+            height: 200px;
+            width: 100%;
+            border: 1px solid $lightgreen;
+            margin: 5em auto;
+            &-icon {
+                width: 75px;
+                height: 75px;
+                background-color: $lightgreen;
+                position: absolute;
+                top: -37.5px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &-text {
+                @include fullCenter;
+                top: 55%;
+                width: 70%;
+            }
+        }
+    }
+    & .work {
+        background-color: $lightgreen;
+        &_box {
+            width: 85%;
+            margin: 1em auto;
+            &-img {
+                height: 300px;
+                width: 100%;
+                background-color: $darkgreen;
+            }
+            &-text {
+                &-contain {
+                    border: 1px solid $darkgreen;
+                    background-color: white;
+                    padding: 2em;
+                }
+                &-btn {
+                    background-color: $darkpurp;
+                    padding: .5em 1em;
+                    color: white;
+                }
+            }
+        }
+    }
+}
