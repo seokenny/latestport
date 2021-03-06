@@ -11,6 +11,10 @@ button {
     border: unset;
 }
 
+h4 {
+    font-weight: 600;
+}
+
 body, button {
     font-family: "Volte";
 }
@@ -27,15 +31,22 @@ body, button {
     background-color: $darkgreen;
 }
 
-.hero, .three {
+.hero, .three, .about {
     width: 85%;
     margin: auto;
 }
 
 #main_contain {
     & .hero {
+        padding-top: 7em;
         &_image {
-
+            margin-bottom: 3em;
+            &-img {
+                width: 100%;
+                padding: .75em 0;
+                border-top: 1px solid $darkgreen;
+                border-bottom: 1px solid $darkgreen;
+            }
         }
         &_text {
             text-align: center;
@@ -49,6 +60,7 @@ body, button {
             &-para {
                 font-size: .9em;
                 line-height: 1.5em;
+                margin-bottom: 2em;
             }
         }
         &_cta {
@@ -62,14 +74,25 @@ body, button {
         }
     }
     & .three {
+        margin-top: 10em;
         &_box {
             background-color: white;
             position: relative;
             height: 200px;
             width: 100%;
-            border: 1px solid $lightgreen;
             margin: 5em auto;
+            box-shadow: 0 0 30px rgba(0, 0, 0, .05);
+            transition: all .3s ease-in-out;
+            // &:hover {
+            //     transform: translateY(-10px);
+            //     transition: all .3s ease-in-out;
+            //     & .three_box-icon {
+            //         transform: translate(-50%, -10px);
+            //         transition: all 1s ease-in-out;
+            //     }
+            // }
             &-icon {
+                // transition: all 1s ease-in-out;
                 width: 75px;
                 height: 75px;
                 background-color: $lightgreen;
@@ -77,6 +100,11 @@ body, button {
                 top: -37.5px;
                 left: 50%;
                 transform: translateX(-50%);
+                box-shadow: 0 0 30px rgba(190, 227, 219, .6);
+                & img {
+                    width: 55%;
+                    @include fullCenter;
+                }
             }
             &-text {
                 @include fullCenter;
@@ -87,26 +115,196 @@ body, button {
     }
     & .work {
         background-color: $lightgreen;
+        padding: 3em 0;
         &_box {
             width: 85%;
             margin: 1em auto;
             &-img {
-                height: 300px;
                 width: 100%;
-                background-color: $darkgreen;
+                background-color: $lightog;
+                padding: 1.2em 0 1em 0;
+                & img {
+                    width: 100%;
+                }
+            }
+            &-mid {
+                margin: 3em auto;
             }
             &-text {
                 &-contain {
-                    border: 1px solid $darkgreen;
                     background-color: white;
-                    padding: 2em;
+                    padding: 3em 2em;
                 }
                 &-btn {
                     background-color: $darkpurp;
-                    padding: .5em 1em;
+                    padding: .75em 1.25em;
                     color: white;
+                }
+                &-subhead {
+                    color: $darkpurp;
                 }
             }
         }
     }
+    & .about {
+        margin-top: 3em;
+        text-align: center;
+        padding-bottom: 3em;
+        &_img {
+            &-img {
+                padding: 0 .75em;
+                border-right: 1px solid $darkgreen;
+                border-left: 1px solid $darkgreen;
+            }
+        }
+        &_text {
+            &-para {
+                line-height: 1.75em;
+                margin: 1.25em 0 2em 0;
+            }
+            &-thanks {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0 3em 0;
+    &_divider {
+        width: 85%;
+        background-color: #ddd;
+        margin: 1em auto 2em auto;
+        height: 1px;
+    }
+    &_icon {
+        display: inline-block;
+        margin-right: .75em;
+        &-left {
+            margin-left: .75em;
+            margin-right: unset;
+        }
+    }
+    &_text {
+        &-designed {
+            display: inline-block;
+        }
+        &-message {
+            display: inline-block;
+        }
+    }
+    &_right {
+        margin-top: 1.5em;
+    }
+}
+
+.divider {
+    width: 101px;
+    margin: 1em 0;
+    background-color: $darkpurp;
+    height: 1px;
+}
+
+@media only screen and (min-width: 500px) {
+    #main_contain {
+        & .hero {
+            padding-top: 4em;
+            &_cta {
+                text-align: center;
+                &-btn {
+                    display: inline-block;
+                    margin: .75em .25em;
+                }
+            }
+            &_image {
+                width: 325px;
+                margin: 3em auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #main_contain {
+        & .hero {
+            width: 50%;
+        }
+        & .three {
+            &_contain {
+                display: flex;
+            }
+            &_box {
+                width: 30%;
+            }
+        }
+        & .work {
+            margin-top: -10em;
+            &_contain {
+                margin-top: 10em;
+            }
+            &_box {
+                position: relative;
+                background-color: white;
+                &-img {
+                    display: inline-block;
+                    width: 60%;
+                }
+                &-text {
+                    display: inline-block;
+                    width: 40%;
+                    vertical-align: top;
+                    min-height: 100px;
+                    &-subhead {
+                        margin-top: 1.5em;
+                    }
+                    &-contain {
+                        position: absolute;
+                        left: 80%;
+                        top: 50%;
+                        width: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+        & .about {
+            width: 40%;
+        }
+    }
+    .footer {
+        padding-bottom: 2em;
+        &_text {
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            margin: auto;
+        }
+        &_left {
+            display: inline-block;
+        }
+        &_right {
+            display: inline-block;
+            margin: unset;
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    #main_contain {
+        & .hero {
+            &_text {
+                width: 517.5px;
+                margin:auto;
+            }
+        }
+        & .about {
+            &_img {
+                &-img {
+                    width: 414px;
+                }
+            }
+        }
+    }
+
 }
