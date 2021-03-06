@@ -266,6 +266,10 @@ body, button {
   font-weight: 600;
 }
 
+#main_contain .work_box-text {
+  background-color: white;
+}
+
 .footer {
   text-align: center;
   padding: 1em 0 3em 0;
@@ -355,6 +359,10 @@ body, button {
   font-family: "Lora";
   padding: 4em 2em;
   background-color: #30D6B3;
+}
+
+#fullwork .hero_quote.datadove_back {
+  background-color: #11151A;
 }
 
 #fullwork .work {
