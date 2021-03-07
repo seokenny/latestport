@@ -6,6 +6,7 @@
     <title>HealCo | Kenny Seo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
@@ -30,11 +31,20 @@
 
         <!--Hero-->
         <section class="hero" id="hero">
-            <div class="hero_head-text">
+            <div class="hero_head-text"
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-out"
+            >
                 <h1 class="hero_head-header">HealCo</h1>
                 <p class="hero_head-para">Shared medical space made simpler</p>
             </div>
-            <div class="hero_image">
+            <div class="hero_image"
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="350"
+            >
                 <img src="images/healco/healco_noshad.png" class="hero_image-img">
             </div>
             <div class="hero_quote">
@@ -305,7 +315,11 @@
     
     <script   src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/work.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
