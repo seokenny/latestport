@@ -22,11 +22,19 @@ h4 {
 }
 
 body, button {
-    font-family: "Volte";
+    font-family: "VolteRegular";
 }
 
-.hero_text, .work_box-text-header {
-    font-family: "Gilroy";
+.hero_text {
+    font-family: "GilroyRegular";
+}
+
+.hero_text-header, .work_box-text-header, .hero_head-header {
+    font-family: "Eina3Bold";
+}
+
+.three_box-text-header, .about_text-thanks, .work_box-text-subhead, .bold {
+    font-family: "VolteMedium";
 }
 
 .left_cta {
@@ -59,7 +67,13 @@ body, button {
         &-li {
             margin: 0 1em;
             cursor: pointer;
+            transition: color .2s ease-in-out;
+            &:hover {
+                color: $darkgreen;
+                transition: color .2s ease-in-out;
+            }
         }
+
     }
 }
 
@@ -75,6 +89,58 @@ body, button {
     margin-right: unset;
 }
 
+.other {
+    width: 100%;
+    text-align: center;
+    margin: 3em 0 1em 0;
+    &-header {
+        color: $darkgreen;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    &-para {
+        font-size: 1.25em;
+        color: $darkpurp;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+.views {
+    display: flex;
+    padding: 2em 0;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        margin-top: 2em;
+        & a {
+            text-decoration: none;
+        }
+        &_left {
+            &-top {
+                font-size: .75em;
+                color: $darkpurp;
+                font-family: "Gilroy-Bold";
+                font-weight: bold;
+            }
+            &-bot {
+                color: $darkgreen;            
+            }
+        }
+        &_right {
+            text-align: right;
+            &-top {
+                font-size: .75em;
+                color: $darkpurp;
+                font-family: "Gilroy-Bold";
+                font-weight: bold;
+            }
+            &-bot {
+                color: $darkgreen;
+            }
+        }
+}
+
 .image_hover {
     background-color: $darkpurp;
     padding: 1em;
@@ -86,11 +152,20 @@ body, button {
     box-shadow: 0 0 30px rgba(0, 0, 0, .3);
     opacity: 0;
     transition: all .3s ease-in-out;
+
     &-rel {
+        padding: .75em 0;
+        border-top: 1px solid $darkgreen;
+        border-bottom: 1px solid $darkgreen;
         position: relative;
         &.israel {
             width: 75%;
+            padding: 0 .75em;
             margin: auto;
+            border-top: unset;
+            border-bottom: unset;
+            border-right: 1px solid $darkgreen;
+            border-left: 1px solid $darkgreen;
         }
         &:hover {
             & .image_hover {
@@ -117,6 +192,7 @@ body, button {
         &_image {
             margin-bottom: 3em;
             &-img {
+                display: block;
                 width: 100%;
                 padding: .75em 0;
                 // border-top: 1px solid $darkgreen;
@@ -229,9 +305,15 @@ body, button {
                         background-color: $darkgreen;
                     }
                 }
+                &-header {
+                }
                 &-subhead {
                     color: $darkpurp;
                     margin-top: 1.5em;
+                    letter-spacing: -.04em;
+                }
+                &-para {
+                    margin-top: .5em;
                 }
             }
         }
@@ -242,6 +324,7 @@ body, button {
         padding-bottom: 3em;
         &_img {
             &-img {
+                display: block;
                 width: 100%;
                 margin: auto;
                 padding: .75em 0;
@@ -296,10 +379,15 @@ body, button {
     }
     &_icon {
         display: inline-block;
+        position: absolute;
         margin-right: .75em;
         &-left {
-            margin-left: .75em;
+            margin-left: .5em;
             margin-right: unset;
+            top: -3px;
+        }
+        &-right {
+            position: unset;
         }
     }
     &_text {
@@ -310,8 +398,12 @@ body, button {
             display: inline-block;
         }
     }
+    &_left {
+        position: relative;
+    }
     &_right {
         margin-top: 1.5em;
+        position: relative;
     }
 }
 
@@ -529,11 +621,16 @@ body, button {
         }
     }
     .footer {
+        width: 752px;
+        margin: auto;
         padding-bottom: 2em;
+        &_divider {
+            width: 100%;
+        }
         &_text {
             display: flex;
             justify-content: space-between;
-            width: 85%;
+            width: 100%;
             margin: auto;
             font-size: .9em;
         }
@@ -544,6 +641,34 @@ body, button {
             display: inline-block;
             margin: unset;
         }
+        &_icon {
+            display: inline-block;
+            position: absolute;
+            margin-right: .75em;
+            &-left {
+                margin-left: .75em;
+                margin-right: unset;
+                top: -3px;
+            }
+            &-right {
+                left: -20px;
+                top: 2px;
+            }
+        }
+        &_text {
+            &-designed {
+                display: inline-block;
+            }
+            &-message {
+                display: inline-block;
+            }
+        }
+        &_left {
+            position: relative;
+        }
+        &_right {
+            position: relative;
+        }
     }
     #fullwork {
         & .work {
@@ -551,6 +676,9 @@ body, button {
                 width: 752px;
             }
         }
+    }
+    .views {
+        width: 752px;
     }
 }
 

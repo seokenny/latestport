@@ -79,14 +79,50 @@
 
     @font-face {
         font-family: "Gilroy-Extrabold";
-        src: url("../fonts/Gilroy-ExtraBold.ttf");
+        src: url("../fonts/Gilroy-ExtraBold.ttf") format('truetype');
         font-style: normal;
         font-weight: 100;
     }
     
     @font-face {
         font-family: "Gilroy-Bold";
-        src: url("../fonts/Gilroy-Bold.ttf");
+        src: url("../fonts/Gilroy-Bold.ttf") format('truetype');
         font-style: normal;
         font-weight: 100;
     }
+
+    @font-face {
+        font-family: 'GilroyBlack';
+        src: url('../fonts/Gilroy-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+      }
+
+      @font-face {
+        font-family: 'GilroyRegular';
+        src: url('../fonts/Gilroy-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+      }
+
+      @font-face {
+        font-family: 'VolteRegular';
+        src: url('../fonts/Volte.woff')  format('woff'), /* Safari, Android, iOS */
+
+      }
+
+      @font-face {
+        font-family: 'VolteSemiBold';
+        src: url('../fonts/Volte Semibold.woff')  format('woff'), /* Safari, Android, iOS */
+
+      }
+
+      @font-face {
+        font-family: 'VolteMedium';
+        src: url('../fonts/Volte Medium.woff')  format('woff'), /* Safari, Android, iOS */
+
+      }
+
+      @font-face {
+        font-family: 'Eina3Bold';
+        src: url('../fonts/Eina03-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+      }
