@@ -117,6 +117,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   padding: unset;
 }
 
+body:after {
+  display: none;
+  content: url(path/to/image-hovered.jpg) url(path/to/another-image-hovered.jpg);
+}
+
 button {
   border: unset;
   cursor: pointer;
