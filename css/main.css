@@ -118,8 +118,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 }
 
 body:after {
-  display: none;
-  content: url(path/to/image-hovered.jpg) url(path/to/another-image-hovered.jpg);
+  position: absolute;
+  overflow: hidden;
+  left: -50000px;
+  content: url("../images/japan-pre.jpg") url("../images/japan-post.jpg") url("../images/profile-pre.jpg") url("../images/profile-post.jpg");
 }
 
 button {
