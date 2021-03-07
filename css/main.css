@@ -597,7 +597,6 @@ body, button {
 
 #fullwork .hero {
   padding-top: unset;
-  background-color: #F6F8F9;
   width: 100%;
 }
 
@@ -621,8 +620,12 @@ body, button {
 }
 
 #fullwork .hero_image-img {
+  background-image: unset;
+  width: 60%;
+  margin: auto;
   border: unset;
   padding: unset;
+  margin: 2em auto;
 }
 
 #fullwork .hero_quote {

@@ -428,7 +428,7 @@ body, button {
     }
     & .hero {
         padding-top: unset;
-        background-color: $lightog;
+        // background-color: $lightog;
         &_head {
             &-text {
                 text-align: center;
@@ -446,8 +446,13 @@ body, button {
         &_image {
             margin: unset;
             &-img {
+                background-image: unset;
+                // box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+                width: 60%;
+                margin: auto;
                 border: unset;
                 padding: unset;
+                margin: 2em auto;
             }
         }
         width: 100%;
