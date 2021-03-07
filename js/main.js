@@ -10,7 +10,7 @@ var currentScrollPos = window.pageYOffset;
 }
 
 $(document).ready(function(){
-    $(this).scrollTop(0);
+    // $(this).scrollTop(0);
     });
     $(".home_works").click(function() {
           

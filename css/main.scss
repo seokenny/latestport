@@ -9,6 +9,12 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 button {
     border: unset;
+    cursor: pointer;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
 }
 
 h4 {
@@ -52,10 +58,17 @@ body, button {
         margin: auto;
         &-li {
             margin: 0 1em;
-            color: $darkpurp;
             cursor: pointer;
         }
     }
+}
+
+.nav_work {
+    justify-content: space-between;
+}
+
+.right_nav {
+    display: inline-block;
 }
 
 .list_li {
@@ -111,8 +124,6 @@ body, button {
                 background-image: url("../images/japan-pre.jpg");
                 background-size: cover;
                 transition: all .3s ease-in-out;
-                &:hover {
-                }
             }
         }
         &_text {
@@ -137,6 +148,18 @@ body, button {
                 width: 125px;
                 padding: 1em 0;
                 margin: .75em auto;
+                transition: background-color .3s ease-in-out;
+                &:hover {
+                    &.left_cta {
+                        background-color: #2B3143;
+                        transition: background-color .3s ease-in-out;
+                    }
+                    &.right_cta {
+                        background-color: #5C918E;
+                        transition: background-color .3s ease-in-out;
+                    }
+                }
+
             }
         }
     }
@@ -145,21 +168,11 @@ body, button {
         &_box {
             background-color: white;
             position: relative;
-            height: 200px;
+            height: 210px;
             width: 100%;
             margin: 5em auto;
             box-shadow: 0 0 30px rgba(0, 0, 0, .05);
-            transition: all .3s ease-in-out;
-            // &:hover {
-            //     transform: translateY(-10px);
-            //     transition: all .3s ease-in-out;
-            //     & .three_box-icon {
-            //         transform: translate(-50%, -10px);
-            //         transition: all 1s ease-in-out;
-            //     }
-            // }
             &-icon {
-                // transition: all 1s ease-in-out;
                 width: 75px;
                 height: 75px;
                 background-color: $lightgreen;
@@ -177,6 +190,10 @@ body, button {
                 @include fullCenter;
                 top: 55%;
                 width: 70%;
+                &-para {
+                    margin-top: 10px;
+                    line-height: 1.5em;
+                }
             }
         }
     }
@@ -206,9 +223,15 @@ body, button {
                     padding: .75em 1.25em;
                     cursor: pointer;
                     color: white;
+                    transition: background-color .3s ease-in-out;
+                    &:hover {
+                        transition: background-color .3s ease-in-out;
+                        background-color: $darkgreen;
+                    }
                 }
                 &-subhead {
                     color: $darkpurp;
+                    margin-top: 1.5em;
                 }
             }
         }
@@ -227,8 +250,6 @@ body, button {
                 background-image: url("../images/profile-pre.jpg");
                 background-size: cover;
                 transition: all .3s ease-in-out;
-                &:hover {
-                }
             }
         }
         &_text {
@@ -253,9 +274,20 @@ body, button {
     }
 }
 
+.myemail {
+    text-decoration: none;
+    color: $darkgreen;
+    transition: all .2s ease-in-out;
+    &:hover {
+        color: $darkpurp;
+        transition: all .2s ease-in-out;
+    }
+}
+
 .footer {
     text-align: center;
     padding: 1em 0 3em 0;
+    color: $darkpurp;
     &_divider {
         width: 85%;
         background-color: #ddd;
@@ -424,6 +456,9 @@ body, button {
                 margin: 3em auto;
             }
         }
+        & .image_hover-rel.israel {
+            width: 325px;
+        }
     }
 }
 
@@ -451,6 +486,12 @@ body, button {
             }
             &_box {
                 width: 30%;
+                &-text {
+                    &-para {
+                        margin-top: 10px;
+                        font-size: .9em;
+                    }
+                }
             }
         }
         & .work {
@@ -494,6 +535,7 @@ body, button {
             justify-content: space-between;
             width: 85%;
             margin: auto;
+            font-size: .9em;
         }
         &_left {
             display: inline-block;
@@ -523,10 +565,37 @@ body, button {
         & .about {
             &_img {
                 &-img {
-                    width: 414px;
+                    // width: 414px;
                 }
             }
         }
     }
 
+}
+
+@media only screen and (min-width: 1260px) {
+    #main_contain {
+        & .three {
+            width: 1058px;
+        }
+        & .work {
+            &_box {
+                width: 1058px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #main_contain {
+        & .about {
+            &_text {
+                &-para {
+                    width: 554px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
 }
