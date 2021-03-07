@@ -854,6 +854,9 @@ body, button {
   .footer_right {
     position: relative;
   }
+  #fullwork .hero_image img {
+    width: 752px;
+  }
   #fullwork .work_box {
     width: 752px;
   }

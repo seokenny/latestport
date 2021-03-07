@@ -686,6 +686,13 @@ body, button {
         }
     }
     #fullwork {
+        & .hero {
+            &_image {
+                & img {
+                    width: 752px;
+                }
+            }
+        }
         & .work {
             &_box {
                 width: 752px;
