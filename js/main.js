@@ -9,6 +9,10 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+$(".plant").click(function() {
+  $(".wasclicked_img").toggleClass("wasclicked_active");
+});
+
 $(document).ready(function(){
     // $(this).scrollTop(0);
     });

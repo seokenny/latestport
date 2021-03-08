@@ -60,6 +60,25 @@ body, button {
     margin: auto;
 }
 
+.wasclicked {
+    &_img {
+        width: 100px;
+        position: absolute;
+        top: -65px;
+        right: -73px;
+        opacity: 0;
+        transition: opacity .4s ease-in-out;
+    }
+    &_active {
+        opacity: 1;
+        transition: opacity .4s ease-in-out;
+    }
+}
+
+.plant {
+    z-index: 200;
+}
+
 .nav {
     transition: top 0.3s;
     padding: 1.5em 0;
