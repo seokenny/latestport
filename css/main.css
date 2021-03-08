@@ -745,6 +745,14 @@ body, button {
   margin-top: 2em;
 }
 
+.current {
+  font-weight: 100;
+  font-family: "VolteRegular";
+  font-size: .75em;
+  font-style: italic;
+  color: #555B6E;
+}
+
 @media only screen and (min-width: 500px) {
   #main_contain .hero {
     padding-top: 4em;
