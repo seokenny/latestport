@@ -171,7 +171,7 @@ body, button {
   width: 100px;
   position: absolute;
   top: -65px;
-  right: -73px;
+  right: 28px;
   opacity: 0;
   -webkit-transition: opacity .4s ease-in-out;
   transition: opacity .4s ease-in-out;
@@ -773,6 +773,20 @@ body, button {
 }
 
 @media only screen and (min-width: 900px) {
+  .wasclicked_img {
+    width: 100px;
+    position: absolute;
+    top: -65px;
+    right: -73px;
+    opacity: 0;
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+  }
+  .wasclicked_active {
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+  }
   #main_contain .hero {
     width: 50%;
   }
