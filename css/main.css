@@ -208,6 +208,7 @@ body, button {
           justify-content: flex-end;
   width: 85%;
   margin: auto;
+  position: relative;
 }
 
 .nav_list-li {
@@ -751,6 +752,14 @@ body, button {
   font-size: .75em;
   font-style: italic;
   color: #555B6E;
+}
+
+.top_left-icon {
+  width: 40px;
+  position: absolute;
+  left: 0;
+  margin-left: 1em;
+  top: -11px;
 }
 
 @media only screen and (min-width: 500px) {

@@ -93,6 +93,7 @@ body, button {
         justify-content: flex-end;
         width: 85%;
         margin: auto;
+        position: relative;
         &-li {
             margin: 0 1em;
             cursor: pointer;
@@ -570,6 +571,14 @@ body, button {
     font-size: .75em;
     font-style: italic;
     color: $darkpurp;
+}
+
+.top_left-icon {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    margin-left: 1em;
+    top: -11px;
 }
 
 //MEDIA QUERIES
