@@ -494,6 +494,7 @@ body, button {
   background-color: #555B6E;
   padding: .75em 1.25em;
   cursor: pointer;
+  margin-top: 2em;
   color: white;
   -webkit-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
@@ -503,6 +504,11 @@ body, button {
   -webkit-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
   background-color: #89B0AE;
+}
+
+.container .work_box-text-header {
+  font-family: "VolteSemiBold";
+  font-size: 1.5em;
 }
 
 .container .work_box-text-subhead {

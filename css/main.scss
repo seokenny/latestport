@@ -328,6 +328,7 @@ body, button {
                     background-color: $darkpurp;
                     padding: .75em 1.25em;
                     cursor: pointer;
+                    margin-top: 2em;
                     color: white;
                     transition: background-color .3s ease-in-out;
                     &:hover {
@@ -336,6 +337,8 @@ body, button {
                     }
                 }
                 &-header {
+                    font-family: "VolteSemiBold";
+                    font-size: 1.5em;
                 }
                 &-subhead {
                     color: $darkpurp;
