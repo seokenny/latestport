@@ -309,6 +309,12 @@ body, button {
         &_box {
             width: 85%;
             margin: 1em auto;
+            transition: all .3s ease-in-out;
+            &:hover {
+                transition: all .3s ease-in-out;
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(0,0,0, .05);
+            }
             &-img {
                 width: 100%;
                 background-color: $lightog;
