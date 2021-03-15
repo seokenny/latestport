@@ -470,17 +470,6 @@ body, button {
 .container .work_box {
   width: 85%;
   margin: 1em auto;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.container .work_box:hover {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .container .work_box-img {
@@ -558,8 +547,22 @@ body, button {
   font-weight: 600;
 }
 
+#main_contain .work_box {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 #main_contain .work_box-text {
   background-color: white;
+}
+
+#main_contain .work_box:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .myemail {
