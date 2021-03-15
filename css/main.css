@@ -545,6 +545,7 @@ body, button {
 
 .container .about_text-thanks {
   font-weight: 600;
+  letter-spacing: -.025em;
 }
 
 #main_contain .work_box {
