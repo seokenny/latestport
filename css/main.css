@@ -477,8 +477,8 @@ body, button {
 .container .work_box:hover {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }

@@ -312,7 +312,7 @@ body, button {
             transition: all .3s ease-in-out;
             &:hover {
                 transition: all .3s ease-in-out;
-                transform: scale(1.05);
+                transform: scale(1.025);
                 box-shadow: 0 0 30px rgba(0,0,0, .05);
             }
             &-img {
